@@ -1,4 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap");
+:root {
+    --main-color: black;
+    scroll-behavior: smooth;
+}
 body {
-    background-image: url("image/Записати.png");
-    background-color: red;
+    max-width: 980px;
+    margin: auto;
+}
+header nav h1 {
+    font-family: 'Yeon Sung';
+}
+h1, p {
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+    text-transform: uppercase;
+}
+header nav.top-menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    text-transform: uppercase;
+
+}
+li:hover {
+    border: 1px solid greenyellow;
+}
+@media (min-width: 550px) {
+    header nav {
+        display: flex;
+        justify-content: space-around;
+    }
+    header nav.top-menu {
+        flex: 1;
+    }
+}
+
+ .baner {
+        background-image: url("sea.png");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    button {
+    color: #444444;
+    background: #F3F3F3;
+    border: 1px #DADADA solid;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 9pt;
+    outline: none;
+}
+div.list article img {
+    display: block;
+    width: 30%;
+    height: 30%;
+}
+@media (min-width: 580px) {
+    main {
+        display: grid;
+        grid-gap: 5px;
+    }
 }
